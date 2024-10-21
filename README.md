@@ -3,14 +3,13 @@
 
 ## Descripción del Proyecto
 
-Utilizando **Terraform** como herramienta de Infraestructura como Código (IaC), esta arquitectura busca garantizar alta disponibilidad, seguridad y la capacidad de manejar grandes volúmenes de tráfico.
+Utilizando **Terraform** como herramienta de Infraestructura como Código (IaC), esta arquitectura busca garantizar alta disponibilidad, seguridad y la capacidad de manejar tráfico.
 
 La aplicación web tiene una arquitectura de **tres capas**:
 - **Frontend**: Desplegado con **Nginx** en **Amazon EKS**.
 - **Lógica de negocio**: Gestionada en contenedores en **Amazon Elastic Kubernetes Service (EKS)**.
 - **Base de datos**: Gestionada por **Amazon Relational Database Service (RDS)**.
 
-Este repositorio define y gestiona toda la infraestructura necesaria para soportar la aplicación a gran escala, utilizando módulos de Terraform reutilizables y buenas prácticas de AWS.
 
 ## Características Principales
 
@@ -80,7 +79,7 @@ Componentes Principales
 
 ## Requisitos Previos
 
-Antes de proceder con el despliegue, asegúrate de tener los siguientes componentes instalados y configurados:
+Antes de proceder con el despliegue, hay que de tener los siguientes componentes instalados y configurados:
 
 - Terraform (v1.0 o superior).
 - AWS CLI configurado con credenciales.
@@ -113,7 +112,7 @@ cloudfront_cidr_blocks = ["13.32.0.0/15", "13.35.0.0/16", "13.54.63.128/26"]
 
 ## Despliegue de la Infraestructura
 
-Sigue estos pasos para desplegar la infraestructura utilizando Terraform.
+Pasos para desplegar la infraestructura utilizando Terraform.
 
 ### Paso 1: Clonar el Repositorio
 
